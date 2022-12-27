@@ -1,5 +1,8 @@
 import com.sun.tools.javac.Main;
 
+/**
+ * Code By Love @SukaCode
+ */
 
 public class AplikasiTodolist {
 
@@ -9,7 +12,7 @@ public class AplikasiTodolist {
 
     public static void main(String[] args) {
 
-        testViewRemoveTodoList();
+        viewShowTodoList();
     }
 
     /**
