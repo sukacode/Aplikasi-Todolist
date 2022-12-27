@@ -1,12 +1,15 @@
 import com.sun.tools.javac.Main;
 
+
 public class AplikasiTodolist {
 
     public static String[] model = new String[10];
 
+    public static java.util.Scanner scanner = new java.util.Scanner(System.in);
+
     public static void main(String[] args) {
 
-        testRemoveTodoList();
+        testInput();
     }
 
     /**
@@ -24,10 +27,10 @@ public class AplikasiTodolist {
     }
 
     public static void testShowTodoList(){
-//        model[0] = "ilham";
-//        model[1] = "alfir";
-//
-//        showTodoList();
+        model[0] = "ilham";
+        model[1] = "alfir";
+
+        showTodoList();
     }
 
 
@@ -113,6 +116,22 @@ public class AplikasiTodolist {
 
         showTodoList();
     }
+
+    public static String input(String info){
+        System.out.print(info + " : ");
+        String data = scanner.nextLine();
+        return data;
+    }
+
+    public static void testInput(){
+        var name = input("Nama");
+        System.out.println("hi " + name);
+
+        var channel = input("channel");
+        System.out.println(channel);
+
+    }
+
 
     /**
      * Menampilkan view Todo List
