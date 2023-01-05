@@ -154,7 +154,7 @@ public class AplikasiTodolist {
                 viewAddTodoList();
             } else if(input.equals("2")){
                 viewRemoveTodoList();
-            } else if(input.equals("x")){
+            } else if(input.equals("3")){
                 break;
             } else {
                 System.out.println("Pilihan tidak mengerti");
