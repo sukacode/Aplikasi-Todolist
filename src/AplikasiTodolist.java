@@ -75,7 +75,7 @@ public class AplikasiTodolist {
 
     public static void testAddTodoList(){
         for ( var i = 0; i < 25; i++){
-            addTodoList("Ini Todolist ke-" + i);
+            addTodoList("Ini TodoList ke-" + i);
         }
         showTodoList();
     }
