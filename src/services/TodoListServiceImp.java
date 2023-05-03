@@ -15,13 +15,13 @@ public class TodoListServiceImp implements TodoListServices {
     public void showTodoList() {
         TodoList[] model = todolistRepository.getAll();
 
-        System.out.println("TODO LIST");
+        System.out.println("TODOLIST");
         for (var i = 0; i < model.length; i++){
-            var todo = model[i];
+            var todoList = model[i];
             var no = i + 1;
 
-            if( todo != null){
-                System.out.println(no + ". " + todo );
+            if( todoList != null){
+                System.out.println(no + ". " + todoList.getTodo());
             }
         }
     }
